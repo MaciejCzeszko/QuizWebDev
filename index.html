@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="alert">
+        <div class="alert-title">
+            Congratulations!! <br />
+            You got them all right!
+        </div>
+    </div>
+
+    <form id="quiz-form">
+        <ol>
+            <li class="question-item">
+                <div>What does this code return? (0 || '' || false || "Hi")</div>
+                <div>
+                    <ol class="answers">
+                        <li class="answer-item">
+                            <label>
+                                <input type="radio" class="answer" name="answer-1" value="false">
+                                <code>0</code>
+                            </label>
+                        </li>
+                        <li class="answer-item">
+                            <label>
+                                <input type="radio" class="answer" name="answer-1" value="true">
+                                <code>"Hi"</code>
+                            </label>
+                        </li>
+                        <li class="answer-item">
+                            <label>
+                                <input type="radio" class="answer" name="answer-1" value="false">
+                                <code>false</code>
+                            </label>
+                        </li>
+                        <li class="answer-item">
+                            <label>
+                                <input type="radio" class="answer" name="answer-1" value="false">
+                                <code>''</code>
+                            </label>
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li class="question-item">
+                What is it called when a function calls itself?
+                <ol class="answers">
+                    <li>
+                        <input type="radio" class="answer" name="answer-2" value="false">
+                        Inception
+                    </li>
+                    <li>
+                        <input type="radio" class="answer" name="answer-2" value="false">
+                        Self-Referential
+                    </li>
+                    <li>
+                        <input type="radio" class="answer" name="answer-2" value="true">
+                        Recursion
+                    </li>
+                    <li>
+                        <input type="radio" class="answer" name="answer-2" value="false">
+                        Who Cares
+                    </li>
+                </ol>
+            </li>
+            <li class="question-item">
+                How do you access the value of the data-count data attribute in JavaScript?
+                <ol class="answers">
+                    <li>
+                        <input type="radio" class="answer" name="answer-3" value="true">
+                        element.dataset.count
+                    </li>
+                    <li>
+                        <input type="radio" class="answer" name="answer-3" value="false">
+                        element.dataAttribute.count
+                    </li>
+                    <li>
+                        <input type="radio" class="answer" name="answer-3" value="false">
+                        element.dataset.dataCount
+                    </li>
+                    <li>
+                        <input type="radio" class="answer" name="answer-3" value="false">
+                        element.dataCount
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <button type="submit">Check</button>
+    </form>
+</body>
+</html>
